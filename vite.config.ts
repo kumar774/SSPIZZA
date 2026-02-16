@@ -10,7 +10,7 @@ export default defineConfig(({ mode }) => {
         host: '0.0.0.0',
       },
       plugins: [react()],
-      
+      base: '/', // Ensure this is set to '/' for Vercel
       resolve: {
         alias: {
           '@': path.resolve(__dirname, '.'),
